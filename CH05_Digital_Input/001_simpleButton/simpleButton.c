@@ -1,10 +1,10 @@
 #include <avr/io.h>
 #include <util/delay.h>
+#include <avr/sfr_defs.h>
 
 int main()
 {
 	DDRD = 0xff;
-	PORTB = (1<<PB2);
 	
 	while(1){
 		if(bit_is_clear(PINB, PB2)){
@@ -13,6 +13,7 @@ int main()
 		else{
 			PORTD = 0b11000011;
 		}
-		return 0;
+		_delay_ms(200);
 	}
+  return 0;
 }
