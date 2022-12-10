@@ -6,7 +6,7 @@ LIBDIR = ../../AVR-Library
 
 PROGRAMMER_TYPE = arduino
 
-PROGRAMMER_ARGS = 	-b 115200 -F -P /dev/tty.usbmodem11401
+PROGRAMMER_ARGS = 	-b 115200 -F -P /dev/tty.usbserial-1110
 
 CC = avr-gcc
 OBJCOPY = avr-objcopy
