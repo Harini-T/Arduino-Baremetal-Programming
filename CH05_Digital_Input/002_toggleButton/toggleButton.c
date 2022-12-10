@@ -4,7 +4,7 @@
 int main()
 {
 	uint8_t buttonWasPressed;
-	PORTB = (1<<PB2);
+	PORTB = (1<<PB2);  //Internal Pullup resistor
 	DDRD = 0b00000001;
 
 	while(1){
